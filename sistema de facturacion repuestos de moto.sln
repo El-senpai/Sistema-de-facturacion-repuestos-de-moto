@@ -5,11 +5,11 @@ VisualStudioVersion = 17.14.36310.24 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sistema de facturacion repuestos de moto", "sistema de facturacion repuestos de moto.csproj", "{ABADFE63-FA24-4BF8-B3A2-DDE08B137FC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "..\CapaDatos\CapaDatos.csproj", "{81B3FE03-8BBB-4546-942A-6A9E9F40971F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{81B3FE03-8BBB-4546-942A-6A9E9F40971F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidades", "..\CapaEntidades\CapaEntidades.csproj", "{19F0C9B0-6B43-4048-8442-111A58C721BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidades", "CapaEntidades\CapaEntidades.csproj", "{19F0C9B0-6B43-4048-8442-111A58C721BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocios", "..\CapaNegocios\CapaNegocios.csproj", "{49A101CC-1FFA-427F-A9F2-A80E09609457}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocios", "CapaNegocios\CapaNegocios.csproj", "{49A101CC-1FFA-427F-A9F2-A80E09609457}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

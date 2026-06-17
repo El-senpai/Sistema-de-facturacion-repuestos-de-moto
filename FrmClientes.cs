@@ -51,7 +51,12 @@ namespace sistema_de_facturacion_repuestos_de_moto
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            if (txtTelefono.Text.Length != 8)
+            {
+                MessageBox.Show("El teléfono debe tener exactamente 8 dígitos.", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Cliente c = new Cliente
             {
                 Cedula = txtCedula.Text,
@@ -77,7 +82,12 @@ namespace sistema_de_facturacion_repuestos_de_moto
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            if (txtTelefono.Text.Length != 8)
+            {
+                MessageBox.Show("El teléfono debe tener exactamente 8 dígitos.", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Cliente c = new Cliente
             {
                 ClienteID = id,
@@ -118,7 +128,7 @@ namespace sistema_de_facturacion_repuestos_de_moto
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-           
+
             dgvClientes.DataSource = neg.Listar();
         }
 
@@ -138,5 +148,13 @@ namespace sistema_de_facturacion_repuestos_de_moto
                 btnEditar.Enabled = true;
             }
         }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
     }
-}
+} 
