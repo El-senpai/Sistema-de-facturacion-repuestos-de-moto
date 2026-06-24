@@ -72,6 +72,7 @@
             groupBox1.Controls.Add(txtCedula);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = SystemColors.ButtonHighlight;
             groupBox1.Location = new Point(3, 1);
             groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
@@ -92,6 +93,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = SystemColors.ActiveCaptionText;
             label6.Location = new Point(10, 388);
             label6.Name = "label6";
             label6.Size = new Size(138, 29);
@@ -109,6 +111,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = SystemColors.ActiveCaptionText;
             label5.Location = new Point(10, 318);
             label5.Name = "label5";
             label5.Size = new Size(108, 29);
@@ -127,6 +130,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Location = new Point(7, 256);
             label4.Name = "label4";
             label4.Size = new Size(125, 29);
@@ -144,6 +148,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Location = new Point(10, 189);
             label3.Name = "label3";
             label3.Size = new Size(117, 29);
@@ -161,6 +166,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Location = new Point(10, 121);
             label2.Name = "label2";
             label2.Size = new Size(114, 29);
@@ -178,6 +184,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(7, 55);
             label1.Name = "label1";
             label1.Size = new Size(117, 29);
@@ -187,11 +194,13 @@
             // groupBox2
             // 
             groupBox2.BackColor = SystemColors.ActiveCaptionText;
+            groupBox2.BackgroundImage = (Image)resources.GetObject("groupBox2.BackgroundImage");
             groupBox2.Controls.Add(btnEliminar);
             groupBox2.Controls.Add(btnEditar);
             groupBox2.Controls.Add(btnGuardar);
             groupBox2.Controls.Add(btnNuevo);
             groupBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox2.ForeColor = SystemColors.ButtonHighlight;
             groupBox2.Location = new Point(684, 15);
             groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
@@ -203,6 +212,7 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.ForeColor = SystemColors.ActiveCaptionText;
             btnEliminar.Location = new Point(179, 138);
             btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
@@ -214,6 +224,7 @@
             // 
             // btnEditar
             // 
+            btnEditar.ForeColor = SystemColors.ActiveCaptionText;
             btnEditar.Location = new Point(7, 130);
             btnEditar.Margin = new Padding(3, 4, 3, 4);
             btnEditar.Name = "btnEditar";
@@ -225,6 +236,7 @@
             // 
             // btnGuardar
             // 
+            btnGuardar.ForeColor = SystemColors.ActiveCaptionText;
             btnGuardar.Location = new Point(179, 55);
             btnGuardar.Margin = new Padding(3, 4, 3, 4);
             btnGuardar.Name = "btnGuardar";
@@ -236,6 +248,7 @@
             // 
             // btnNuevo
             // 
+            btnNuevo.ForeColor = SystemColors.ActiveCaptionText;
             btnNuevo.Location = new Point(7, 55);
             btnNuevo.Margin = new Padding(3, 4, 3, 4);
             btnNuevo.Name = "btnNuevo";

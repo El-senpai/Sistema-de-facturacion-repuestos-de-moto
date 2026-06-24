@@ -147,5 +147,15 @@ namespace sistema_de_facturacion_repuestos_de_moto
                 btnEditar.Enabled = true;
             }
         }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

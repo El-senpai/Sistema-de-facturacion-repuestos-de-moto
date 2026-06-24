@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
+using System.Drawing;                              
+using System.Text.RegularExpressions;              
+using System.Globalization;                        
 using CapaEntidades;
 using CapaNegocios;
 using CapaDatos;
-
 namespace sistema_de_facturacion_repuestos_de_moto
 {
     public partial class FrmFacturacion : Form
@@ -248,5 +250,7 @@ namespace sistema_de_facturacion_repuestos_de_moto
                 txtPrecio.Text = p.PrecioVenta.ToString("F2");
             }
         }
+
+
     }
 }

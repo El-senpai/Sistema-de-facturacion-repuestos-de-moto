@@ -42,7 +42,6 @@ namespace sistema_de_facturacion_repuestos_de_moto
         {
             Limpiar();
         }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == "" || txtApellido.Text == "")
@@ -57,6 +56,7 @@ namespace sistema_de_facturacion_repuestos_de_moto
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             Cliente c = new Cliente
             {
                 Cedula = txtCedula.Text,
@@ -67,13 +67,25 @@ namespace sistema_de_facturacion_repuestos_de_moto
                 Direccion = txtDireccion.Text
             };
 
-            neg.Insertar(c);
-            MessageBox.Show("Cliente guardado correctamente.", "Éxito",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Limpiar();
-            CargarClientes();
+            try
+            {
+                neg.Insertar(c);
+                MessageBox.Show("Cliente guardado correctamente.", "Éxito",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Limpiar();
+                CargarClientes();
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message, "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error inesperado: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (id == 0)

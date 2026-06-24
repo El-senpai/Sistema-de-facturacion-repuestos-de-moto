@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaEntidades;
+using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CapaDatos;
-using CapaEntidades;
 
 namespace CapaNegocios
 {
@@ -43,11 +44,16 @@ namespace CapaNegocios
             {
                 dal.Insertar(c);
             }
+            catch (SqlException ex) when (ex.Number == 2627 || ex.Number == 2601)
+            {
+                throw new InvalidOperationException("Este cliente ya ha sido registrado.");
+            }
             catch (Exception ex)
             {
                 throw new InvalidOperationException("Error al insertar cliente en CapaNegocios.ClienteNeg.", ex);
             }
         }
+        
 
         public void Actualizar(Cliente c)
         {
